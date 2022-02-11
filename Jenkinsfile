@@ -14,7 +14,7 @@ pipeline {
         }
     }
     
-        stage('Build Docker Image') {
+        stage("Build Docker Image") {
             steps {
                 sh 'docker build -t dockerhandson/spring-boot-mongo .'
             }
