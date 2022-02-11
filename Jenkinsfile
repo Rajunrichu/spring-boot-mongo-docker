@@ -19,7 +19,7 @@ pipeline {
                 sh 'docker build -t dockerhandson/spring-boot-mongo .'
             }
         }
-    }
+ }
 
     
-}
+
