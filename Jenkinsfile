@@ -13,6 +13,10 @@ pipeline {
             }
         }
     }
+    
+    stage('Build Docker Image') {
+        sh 'docker build -t dockerhandson/spring-boot-mongo .'
+    }
 
     
 }
