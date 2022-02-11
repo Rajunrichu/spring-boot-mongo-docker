@@ -12,6 +12,11 @@ pipeline {
                 sh "mvn clean package"
             }
         }
+        stages("Docker Build") {
+            steps {
+                sh 'docker build -t dockerhandson/spring-boot-mongo .'
+            }
+        }
     }
     
        
